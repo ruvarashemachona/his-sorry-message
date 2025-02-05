@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: #333; /* Dark gray text */
+            padding: 50px;
+            background: 
+  linear-gradient(rgba(0,0,0, 0.75),rgba(0,0,0, 0.75)),
+  url(./pictures/headphones.jpg);
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #000080; /* Navy blue text */
+        }
+        p {
+            font-size: 18px;
+            color: #333; /* Dark gray text */
+        }
+        .button {
+            background-color: #000080; /* Navy blue button */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #000066; /* Darker navy blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I'm Sorry, My Love</h1>
+        <p>I made a mistake by posting a picture of me with another guy. At the moment I didn't think anything was wrong but I see it now. I am very sorry, please forgive me, I miss you.You mean so much to me.</p>
+        <p>Will you forgive me?</p>
+        <button class="button" onclick="showLove()">Yes, I Forgive You</button>
+        <p id="response" style="display:none; font-weight: bold; color: green; margin-top: 15px;">Thank you, my love! ❤️</p>
+    </div>
+
+    <audio autoplay loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function showLove() {
+            document.getElementById('response').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
